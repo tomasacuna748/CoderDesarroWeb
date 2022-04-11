@@ -305,7 +305,7 @@ a {
     background-color: blue;
   }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width:0px) and (max-width: 768px){
 	.gridTopPeluches {		
 		margin: 0%;
 		display: grid;
@@ -357,5 +357,48 @@ a {
     .navMenu li {
         display: block;
         
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width: 1550px){
+  
+    .navMenu li a{ 
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin: 1rem 1rem 2rem 1rem;
+        padding: 0rem 0.5rem 1rem 1rem;
+        
+        text-decoration: none;
+        text-align: center;
+        color: rgb(255, 165, 0);   
+    }
+    .titular{
+        font-family: "KGTakeOnTheWorld"; 
+        font-size: 4rem;
+        color: #8B0000;
+        text-align: center;
+        margin-bottom: 5rem;
+        text-decoration: underline;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1100px){
+    .navMenu li a{ 
+        font-size: 2rem;
+        font-weight: 1000;
+        margin: 2rem 1rem 2rem 1rem;
+        padding: 0rem 0.5rem 1rem 1rem;
+        
+        text-decoration: none;
+        text-align: center;
+        color: rgb(255, 165, 0);
+       
+    }
+    .titular{
+        font-family: "KGTakeOnTheWorld"; 
+        font-size: 3rem;
+        color: #8B0000;
+        text-align: center;
+        margin-bottom: 5rem;
+        text-decoration: underline;
     }
 }
