@@ -1,0 +1,361 @@
+ /*1rem = 10px*/;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@300;400;600;700&display=swap');
+
+@font-face{
+    font-family: "Bungee-Regular";
+    src: url("../css/Bungee-Regular.ttf");
+}
+@font-face{
+    font-family: "KGTakeOnTheWorld";
+    src: url("../css/KGTakeOnTheWorld.ttf");
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+::before::after{
+    box-sizing: inherit;
+}
+
+body{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    background-color: #B9E8F5;
+    margin-top: 15rem;
+}
+.logo {
+    height: 8rem;
+}
+
+
+
+/* Header del Sitio Web */
+
+header {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*background-color: #92D6E8;*/
+    background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+	z-index: 1000;
+  
+}
+
+.navMenu {
+	position: relative;
+    margin-top: 1rem;   
+}	
+
+.navMenu li {
+	display: inline-block;
+    
+}
+
+.navMenu li a{ 
+    font-size: 5rem;
+    font-weight: 1000;
+    margin: 1rem 3rem 2rem 2rem;
+    padding: 0rem 0.5rem 1rem 1rem;
+	
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 165, 0);
+}
+
+
+
+/* Contenido del Sitio Web */
+
+
+.titular{
+    font-family: "KGTakeOnTheWorld"; 
+    font-size: 5rem;
+    color: #8B0000;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-decoration: underline;
+}
+.tituloObjeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;  
+    line-height: 3;
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(to bottom right,#92D6E8,#2d8ba5,#92D6E8);
+    
+}
+
+.tituloObjeto:last-child{
+    margin-bottom: 4rem;
+}
+
+.tituloObjeto h3{
+    padding: 1rem;
+    margin: 5rem 5rem 5rem 5rem;
+    border: 5px solid black;
+    color: #000000;
+    float: left;
+    width: 25rem;
+    text-align: center;   
+}
+
+.tituloObjeto p{
+    font-size: 2.5rem;
+    color: rgb(21, 90, 30);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem; 
+    margin-top: 0rem;     
+}
+.tituloObjeto img{
+    margin-right: 2rem;
+}
+.tituloObjeto div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botonComprar{
+    font-size: 3rem;
+    float: right;
+
+}
+
+
+/*index*/
+
+.verTodos{
+    font-size: 2.5rem;
+    margin: 2rem;
+    
+   
+}
+
+.gridTopPeluches{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;  
+}
+
+.peluche{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 10px black;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
+    
+}
+
+.peluche img {
+    width: 70%;
+}
+
+.peluche span{
+    margin: 0 0 2rem 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    
+}
+
+/*informacion*/
+.letraLato{
+	font-family: "Lato", sans-serif;
+	font-size: 3rem;
+    
+}
+.respuesta{
+    font-family: "Roboto Slab", serif;
+	font-size: 2.5rem;
+    color: #9526C5;
+    
+}
+.encuadre{
+    border: 0.5rem solid #000000;
+}
+
+.colorB{
+    color: #a80909;  
+}
+.pregunta{
+    font-weight: 600;
+}
+/*formularios*/
+
+.logMenu, .registerMenu, .contactoMenu {
+
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    
+    padding: 3rem;
+    margin: 2rem 5rem 3rem 5rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    display: block;    
+}
+.colorBack{
+    background: #324355;
+}
+.ajustar{
+    display: inline-block;   
+}
+.ajustarContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h4{
+    font-family: "Roboto Slab", serif;
+	font-size: 2.5rem;
+    color: #122992;
+    text-align: center; 
+    
+    
+}
+/*Locales*/
+.locales{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+
+
+/* Footer del Sitio Web */
+
+
+.gridFooter{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.topFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+  
+}
+
+
+.topFooter .redes a{
+    color: #0000ff;
+}
+
+.bottomFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFooter span{
+    font-size: 1.3rem;
+    
+}
+
+.gridProductos{
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: 75%;
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.gridCuenta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.gridLocales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+a {
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: blue;
+  }
+
+@media only screen and (max-width: 768px){
+	.gridTopPeluches {		
+		margin: 0%;
+		display: grid;
+		grid-gap: 0.5em;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3, 1fr);
+	}
+    .gridFooter{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        
+        justify-content: center;
+        align-items: center;
+        font-size-adjust: 80%;
+    }
+
+    .gridProductos{
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+        align-items: center;
+    }
+    .tituloObjeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gridCuenta{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .gridLocales{
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+        background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+    }
+    .navMenu li {
+        display: block;
+        
+    }
+}
