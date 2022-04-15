@@ -5,62 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Informacion</title>
 </head>
 <body>
     <header>
-        <nav class="navMenu">
-            <ul>
-                <img src="../img/TRlogo.png" class="logo" alt="logo tienda">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="informacion.html">Informacion</a>
-                </li>
-                <li>
-                    <a href="cuenta.html">Cuenta</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="locales.html">Locales</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/TRlogo.png" class="logo" alt="logito">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                  <a class="nav-link" href="informacion.html">Informacion</a>
+                  <a class="nav-link" href="cuenta.html">Cuenta</a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link" href="locales.html">Locales</a>   
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
     <section>
-        <div>
-            <h1 class="titular">Informacion</h1>
-            <div class="colorB">
-                <h3 class="letraLato" >Quienes somos</h3>
-                <p class="respuesta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nostrum, voluptas tempore beatae laudantium, praesentium culpa facilis ratione nam rerum asperiores error assumenda natus repellat qui sit dolorum cumque quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magnam in quae sunt vero nesciunt, natus eligendi saepe earum, itaque cumque officia ad? Eius recusandae aperiam tempora hic labore ipsa!</p>
+        <div class="main">
+            <div class="titular">
+                <h1>Informacion</h1>
             </div>
-            <div>
-                <div class="letraLato">
-                    <p class="colorB">Preguntas Frecuentes</p>
-                    <br>
-                    <div class="encuadre">
-                        <p class="pregunta">Pregunta 1 </p>
-                        <p class="respuesta">Illum qui, perferendis recusandae quasi laborum architecto voluptatum! Amet</p>
-                    </div>
-                    <br>
-                    <div class="encuadre">
-                        <p class="pregunta">Pregunta 2 </p>
-                        <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Amet</p>
-                    </div>
-                    <br>
-                    <div class="encuadre">
-                        <p class="pregunta">Pregunta 3</p>
-                        <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui, perferendis recusandae quasi laborum architecto voluptatum!</p>
+                <div class="colorB">
+                    <h2 class="letraLato" >Quienes somos</h2>
+                    <p class="respuesta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nostrum, voluptas tempore beatae laudantium, praesentium culpa facilis ratione nam rerum asperiores error assumenda natus repellat qui sit dolorum cumque quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magnam in quae sunt vero nesciunt, natus eligendi saepe earum, itaque cumque officia ad? Eius recusandae aperiam tempora hic labore ipsa!</p>
+                </div>
+
+                <div>
+                    <div class="letraLato">
+                        <p class="colorB centrado">Preguntas Frecuentes</p>
+                        <div class="encuadre">
+                            <p class="pregunta">Pregunta 1 </p>
+                            <p class="respuesta">Illum qui, perferendis recusandae quasi laborum architecto voluptatum! Amet</p>
+                        </div>
+                        <div class="encuadre">
+                            <p class="pregunta">Pregunta 2 </p>
+                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Amet</p>
+                        </div>
+                        <div class="encuadre">
+                            <p class="pregunta">Pregunta 3</p>
+                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui, perferendis recusandae quasi laborum architecto voluptatum!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
     <footer>
@@ -79,5 +78,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
