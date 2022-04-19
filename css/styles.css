@@ -167,7 +167,7 @@ header {
     background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
 }
 .peluche:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.3,1.3);
     transition: 1.5s;
 }
 
@@ -651,3 +651,126 @@ a {
         margin-left: 3rem;
     }
 }
+
+@media only screen and (min-width:1551px){
+    
+
+    
+    .rotaR:hover{
+        transform: rotate(25deg);
+        transition: 0.3s;
+    }
+    .rotaCR:hover{
+        transform: rotate(-25deg);
+        transition: 0.3s;
+    }
+    .text-focus-in1 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    .text-focus-in2 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+    }
+    .tracking-in-expand-fwd {
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    .scale-in-center1 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    }
+    .scale-in-center2 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+    }
+}
+
+/*necesario para titular*/
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+/*necesario para resto de titulos*/
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+@keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+/*centrado index*/
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+}
+  
+
+  
+
+  
