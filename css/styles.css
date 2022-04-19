@@ -24,8 +24,7 @@ body{
     background-color: #B9E8F5;   
 }
 .main{
-    margin: 15rem 10rem 0rem 10rem;
-    
+    margin: 15rem 10rem 0rem 10rem;   
 }
 .logo {
     height: 6rem;
@@ -57,11 +56,9 @@ header {
     font-weight: 1000;
     margin: 1rem 3rem 2rem 2rem;
     padding: 0rem 0.5rem 1rem 1rem;
-	
     text-decoration: none;
     text-align: center;
     color: rgb(255, 165, 0); 
-
 }
 
 
@@ -97,8 +94,7 @@ header {
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;  
-    line-height: 3;
-    
+    line-height: 3;  
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-image: linear-gradient(to bottom right,#92D6E8,#2d8ba5,#92D6E8);
@@ -138,7 +134,6 @@ header {
 .botonComprar{
     font-size: 3rem;
     float: right;
-
 }
 
 
@@ -170,8 +165,10 @@ header {
     border: solid 10px black;
     padding-bottom: 3rem;
     background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
-    
-    
+}
+.peluche:hover{
+    transform: scale(1.5,1.5);
+    transition: 1.5s;
 }
 
 .peluche img {
@@ -181,8 +178,7 @@ header {
 .peluche span{
     margin: 0 0 2rem 0;
     font-size: 3.5rem;
-    font-weight: 600;
-    
+    font-weight: 600;  
 }
 
 /*informacion*/
@@ -208,8 +204,7 @@ header {
     color: #b12020;   
 }
 
-.encuadre{
-    
+.encuadre{ 
     border: 0.5rem solid #000000;
     margin-bottom: 5rem;
     text-align: center;   
@@ -225,14 +220,16 @@ header {
 .pregunta{
     font-weight: 600;
 }
+.marginInfo{
+    margin: 0rem 10rem 0rem 10rem;
+}
 /*formularios*/
 
- .registerMenu, .logMenu {
+.registerMenu, .logMenu {
     
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
     width: 70%;
-    
     padding: 3rem;
     margin: 2rem 5rem 3rem 5rem;
     color: #FFFFFF;
@@ -241,9 +238,7 @@ header {
 }
 .contactoMenu{
     font-family: 'Lato', sans-serif;
-	font-weight: 300;
-    
-    
+	font-weight: 300;  
     padding: 6rem;
     margin: 2rem 2rem 0rem 2rem;
     color: #FFFFFF;
@@ -255,8 +250,7 @@ header {
 .ajustarCuenta{
     display: flex;
     display: inline-block;  
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
 
 
@@ -300,22 +294,19 @@ header {
 
 h4{
     font-family: "Roboto Slab", serif;
-	font-size: 3.5rem;
-    
-     
-    
-    
+	font-size: 3.5rem;   
 }
+
 /*Locales*/
 .locales{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
     color: #122992;
     font-weight: 600;
-   
 }
-
-
+.marginleft{
+    margin-left: 5rem;
+}
 
 
 /* Footer del Sitio Web */
@@ -363,6 +354,7 @@ h4{
     grid-gap: 20px;
     grid-template-columns: 75%;
     grid-template-rows: repeat(6, 1fr);
+    
 
 }
 
@@ -389,10 +381,15 @@ a {
 */
 .navbar-light .navbar-nav .nav-link:hover{
     color: rgba(0, 12, 240,1);
-  }
+    text-decoration: underline;
+   
+    transition: 1s;
+}
+
+
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255, 165, 0); 
-  }
+}
 .navbar-nav{
     gap: 1.5rem;
 }
@@ -403,7 +400,22 @@ a {
 		grid-gap: 0.5em;
 		grid-template-columns: 100%;
 		grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
 	}
+    .peluche{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid 10px black;
+        padding-bottom: 3rem;
+        background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
+        margin: 0rem 2rem 0rem 2rem;
+    }
+    .peluche:hover{
+        transform: scale(1,1);
+        transition: 0s;
+    }
+
     .gridFooter{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -416,10 +428,13 @@ a {
     .gridProductos{
         margin: 0%;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 95%;
         grid-template-rows: repeat(6,1fr);
         align-items: center;
+        justify-items: center;
     }
+    
+
     .tituloObjeto{
         display: flex;
         justify-content: center;
@@ -438,6 +453,19 @@ a {
         grid-template-rows: 1fr 1fr;
         margin-left: 0rem;
     }
+    .locales{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        color: #122992;
+        font-weight: 600;
+
+    }
+    .mapa{
+        transform: scale(0.8,0.8);
+    }
+   
+
+    
     header {
         position: relative;
         top: 0;
@@ -446,7 +474,7 @@ a {
         
         background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
     }
-    main{
+    .main{
         margin: 5rem 0rem 0rem 0rem;
     }
     .navbar a{ 
@@ -462,31 +490,80 @@ a {
     }
 
 }
-@media only screen and (min-width:769px) and (max-width: 1099px){
+
+@media only screen and (min-width:769px) and (max-width: 1150px){
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+        background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+    }
     .navbar a{ 
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 1000;
         margin: 2rem 1rem 2rem 1rem;
         padding: 0rem 0.5rem 1rem 1rem;
         
         text-decoration: none;
         text-align: center;
-        color: rgb(255, 165, 0);
-       
+        color: rgb(255, 165, 0); 
+    }
+    .navbar-nav{
+        gap: 1rem;
+    }
+
+    .gridTopPeluches {		
+		margin: 0%;
+		display: grid;
+		grid-gap: 3.5em;
+		grid-template-columns: 80%;
+		grid-template-rows: repeat(3, 1fr);
+	}
+    .peluche{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid 10px black;
+        padding-bottom: 3rem;
+        background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
+        margin: 5rem;
+    }
+    .peluche:hover{
+        transform: scale(1,1);
+        transition: 0s;
+    }
+    .gridCuenta{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
     }
    
     .gridProductos{
-        margin: 0%;
+       
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 80%;
         grid-template-rows: repeat(6,1fr);
         align-items: center;
+        justify-content: center;
+        
     }
     .tituloObjeto{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    
+    .gridLocales{
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 0rem;
+        justify-items: center;
+        grid-gap: 4rem;
     }
 
     
@@ -511,27 +588,54 @@ a {
         margin-bottom: 5rem;
     }
     .main{
-        margin: 15rem 0rem 0rem  0rem;
+        margin: 5rem 0rem 0rem  0rem;
+    }
+    .marginleft{
+        margin-left: 0rem;
     }
     
 }
 
-@media only screen and (min-width:1100px) and (max-width: 1550px){
-  
+@media only screen and (min-width:1151px) and (max-width: 1550px){
+    
+    .gridTopPeluches{
+        display: grid;
+        justify-content: space-evenly;
+    
+        grid-template-columns: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem; 
+        margin-left: 5rem; 
+        margin-right: 5rem;
+    }
+    .logMenu {
+    
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        width: 70%;
+        padding: 3rem;
+        margin: 2rem 3rem 3rem 3rem;
+        color: #FFFFFF;
+        font-size: 2rem;
+        display: block;    
+    }
+
     .navbar a{ 
-        font-size: 2.5rem;
+        font-size: 3.0rem;
         font-weight: 900;
         margin: 1rem 1rem 2rem 1rem;
         padding: 0rem 0.5rem 1rem 1rem;
         
         text-decoration: none;
         text-align: center;
-        color: rgb(255, 165, 0);   
+        
+    }
+    .navbar-nav{
+        gap: 2.5rem;
     }
     
-    .navbar-nav{
-        gap: 1.5rem;
-    }
+    
+    
     .titular{
         font-family: "KGTakeOnTheWorld"; 
         font-size: 4rem;
@@ -541,6 +645,9 @@ a {
         text-decoration: underline;
     }
     .main{
-        margin: 15rem 0rem 0rem 0rem;
+        margin: 15rem 8rem 0rem 8rem;
+    }
+    .marginleft{
+        margin-left: 3rem;
     }
 }
