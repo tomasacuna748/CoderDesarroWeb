@@ -1,0 +1,22 @@
+@import "variables";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "base/typo";
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+::before::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #B9E8F5;   
+}
+
+
+

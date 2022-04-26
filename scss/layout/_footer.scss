@@ -1,0 +1,31 @@
+.gridFooter{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        .topFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #000000;
+            .redes a{
+                color: #0000ff;
+            }
+          
+        }
+        .bottomFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .bottomFooter span{
+                font-size: 1.3rem;
+                
+            }
+        }
+
+}
