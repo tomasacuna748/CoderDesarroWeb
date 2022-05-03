@@ -29,3 +29,26 @@
         }
 
 }
+
+.gridCuenta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    .logMenu{
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        width: 70%;
+        padding: 3rem;
+        margin: 2rem 5rem 3rem 5rem;
+        color: #FFFFFF;
+        font-size: 2rem;
+        display: block;
+        .ajustarCuenta{
+            display: flex;
+            display: inline-block;  
+            justify-content: space-around;  
+        }  
+    }
+    
+}
