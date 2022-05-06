@@ -81,7 +81,7 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
         border-radius: 5rem;
-        background-image: linear-gradient(to bottom right,#92D6E8,#2d8ba5,#92D6E8);  
+        background-image: linear-gradient(to bottom right,$colorGradiantHeader2,$colorGradiantHeader1,$colorGradiantHeader2);  
         &:last-child{
             margin-bottom: 4rem;
         }
