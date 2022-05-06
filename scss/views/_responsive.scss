@@ -5,7 +5,7 @@
         left: 0;
         width: 100%;
         
-        background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+        background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         a{ 
             font-size: 2.5rem;
             font-weight: 1000;
@@ -13,7 +13,7 @@
             padding: 0rem 0.5rem 1rem 1rem;   
             text-decoration: none;
             text-align: center;
-            color: rgb(255, 165, 0);    
+            color: $colorLetraheader;    
         }
     }
 
@@ -32,7 +32,7 @@
                 flex-direction: column;
                 border: solid 10px black;
                 padding-bottom: 3rem;
-                background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
+                background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
                 margin: 0rem 2rem 0rem 2rem;
                 &:hover{
                     transform: scale(1,1);
@@ -52,6 +52,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                border-radius: 3rem;
             }
             
         }
@@ -95,7 +96,7 @@
         left: 0;
         width: 100%;
         
-        background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+        background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         .navbar a{ 
             font-size: 2.5rem;
             font-weight: 1000;
@@ -104,7 +105,7 @@
             
             text-decoration: none;
             text-align: center;
-            color: rgb(255, 165, 0); 
+            color: $colorLetraheader; 
         }
         .navbar-nav{
             gap: 1rem;
@@ -115,7 +116,7 @@
         .titular{
             font-family: "KGTakeOnTheWorld"; 
            
-            color: #8B0000;
+            color: $color-titulo;
             text-align: center;
             margin-bottom: 5rem;
             text-decoration: underline;
@@ -144,7 +145,7 @@
                 flex-direction: column;
                 border: solid 10px black;
                 padding-bottom: 3rem;
-                background-image: linear-gradient(#2d8ba5,#B9E8F5 75%);
+                background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
                 margin: 5rem;
                 &:hover{
                     transform: scale(1,1);
@@ -201,7 +202,7 @@
         left: 0;
         width: 100%;
         
-        background-image: linear-gradient(#2d8ba5,#92D6E8 50%);
+        background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         .navbar a{ 
             font-size: 3.0rem;
             font-weight: 900;
@@ -219,7 +220,7 @@
         .titular{
             font-family: "KGTakeOnTheWorld"; 
             font-size: 4rem;
-            color: #8B0000;
+            color: $color-titulo;
             text-align: center;
             margin-bottom: 5rem;
             text-decoration: underline;
@@ -256,5 +257,30 @@
         margin-top: 5rem;
         justify-content: center;
         align-items: center;
+    }
+}
+@media only screen and (min-width:1551px){
+    .text-focus-in1 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    .text-focus-in2 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+    }
+    .tracking-in-expand-fwd1 {
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }.tracking-in-expand-fwd2 {
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+    }
+    .scale-in-center1 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    }
+    .scale-in-center2 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
     }
 }

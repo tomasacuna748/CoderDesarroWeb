@@ -19,7 +19,7 @@ header {
         padding: 0rem 0.5rem 1rem 1rem;
         text-decoration: none;
         text-align: center;
-        color: rgb(255, 165, 0); 
+        color: $colorLetraheader; 
     }
     .navbar-nav{
         gap: 1.5rem;
@@ -27,7 +27,7 @@ header {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(255, 165, 0);
+    color: $colorLetraheader;
     &:hover{
         color: rgba(0, 12, 240,1);
         text-decoration: underline;
