@@ -37,6 +37,7 @@ header {
   font-family: "KGTakeOnTheWorld";
   src: url("../css/KGTakeOnTheWorld.ttf"); }
 
+@forward "../base/utilidades";
 .main {
   margin: 15rem 10rem 0rem 10rem; }
 
@@ -185,7 +186,8 @@ header {
     width: 70%; }
     .centrarTodo .contactoMenu .cajaComentario {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
     .centrarTodo .contactoMenu .btn-primary {
       color: #fff;
       font-size: 2rem;
@@ -219,9 +221,9 @@ header {
 /*cuenta*/
 .gridCuenta {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  justify-items: center; }
+  grid-template-columns: 1fr 1fr; }
   .gridCuenta .registerMenu, .gridCuenta .logMenu {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -239,11 +241,12 @@ header {
         background: #324355;
         padding: 5rem; }
 
+@forward '../base/utilidades';
 .gridFooter {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  grid-template-rows: repeat(2, 1fr); }
   .gridFooter .topFooter {
     display: flex;
     justify-content: center;
@@ -265,9 +268,9 @@ header {
 
 .gridCuenta {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  justify-items: center; }
+  grid-template-columns: 1fr 1fr; }
   .gridCuenta .logMenu {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -282,6 +285,7 @@ header {
       display: inline-block;
       justify-content: space-around; }
 
+@forward "../base/utilidades";
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   header {
     position: relative;
@@ -349,9 +353,9 @@ header {
         transform: scale(0.8, 0.8); }
   .gridFooter {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    grid-template-rows: repeat(2, 1fr);
     font-size-adjust: 80%; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1150px) {
@@ -372,7 +376,7 @@ header {
     header .navbar-nav {
       gap: 1rem; }
   .main {
-    margin: 5rem 0rem 0rem  0rem; }
+    margin: 5rem 0rem 0rem 0rem; }
     .main .titular {
       font-family: "KGTakeOnTheWorld";
       color: #8B0000;
@@ -415,10 +419,10 @@ header {
         justify-content: center; }
     .main .gridProductos {
       display: grid;
-      grid-template-columns: 80%;
-      grid-template-rows: repeat(6, 1fr);
+      justify-content: center;
       align-items: center;
-      justify-content: center; }
+      grid-template-columns: 80%;
+      grid-template-rows: repeat(6, 1fr); }
       .main .gridProductos .tituloObjeto {
         display: flex;
         justify-content: center;
@@ -481,10 +485,10 @@ header {
       margin-left: 3rem; }
   .gridFooter {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 5rem;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5rem; } }
 
 @media only screen and (min-width: 1551px) {
   .text-focus-in1 {

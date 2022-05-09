@@ -1,0 +1,27 @@
+
+@mixin grid-jusCenter-aliCenter{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+@mixin flex-jusCent-aliCent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-aliCent-direColum{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex-center-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin marginMain($mtop, $mright, $mbot, $mleft){
+    margin: $mtop $mright $mbot $mleft;
+}

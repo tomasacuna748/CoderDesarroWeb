@@ -1,3 +1,5 @@
+@forward "../base/utilidades";
+
 @media only screen and (min-width:0px) and (max-width: 768px){
     header {
         position: relative;
@@ -18,7 +20,7 @@
     }
 
 	.main{
-        margin: 5rem 0rem 0rem 0rem;
+        @include marginMain(5rem,0rem,0rem,0rem);
         .gridTopPeluches {		
             margin: 0%;
             display: grid;
@@ -27,9 +29,7 @@
             grid-template-rows: repeat(3, 1fr);
             grid-gap: 2rem;
             .peluche{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                @include flex-aliCent-direColum;
                 border: solid 10px black;
                 padding-bottom: 3rem;
                 background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
@@ -48,10 +48,7 @@
             align-items: center;
             justify-items: stretch;
             .tituloObjeto{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @include flex-center-center-column;
                 border-radius: 3rem;
             }
             
@@ -80,11 +77,8 @@
     }
     
     .gridFooter{
-        display: grid;
+        @include grid-jusCenter-aliCenter;
         grid-template-rows: repeat(2, 1fr);
-        
-        justify-content: center;
-        align-items: center;
         font-size-adjust: 80%;
     }
 }
@@ -112,7 +106,7 @@
         }
     }
     .main{
-        margin: 5rem 0rem 0rem  0rem;
+        @include marginMain(5rem,0rem,0rem,0rem);
         .titular{
             font-family: "KGTakeOnTheWorld"; 
            
@@ -140,9 +134,7 @@
             grid-template-columns: 80%;
             grid-template-rows: repeat(3, 1fr);
             .peluche{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                @include flex-aliCent-direColum;
                 border: solid 10px black;
                 padding-bottom: 3rem;
                 background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
@@ -166,17 +158,11 @@
         }
        
         .gridProductos{
-           
-            display: grid;
+            @include grid-jusCenter-aliCenter;
             grid-template-columns: 80%;
             grid-template-rows: repeat(6,1fr);
-            align-items: center;
-            justify-content: center;
             .tituloObjeto{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @include flex-center-center-column;
             }
             
         }
@@ -216,7 +202,7 @@
         }
     }
     .main{
-        margin: 15rem 8rem 0rem 8rem;
+        @include marginMain(15rem,8rem,0rem,8rem);
         .titular{
             font-family: "KGTakeOnTheWorld"; 
             font-size: 4rem;
@@ -252,11 +238,9 @@
         
     }
     .gridFooter{
-        display: grid;
+        @include grid-jusCenter-aliCenter;
         grid-template-rows: repeat(2, 1fr);
         margin-top: 5rem;
-        justify-content: center;
-        align-items: center;
     }
 }
 @media only screen and (min-width:1551px){

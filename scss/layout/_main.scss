@@ -1,7 +1,8 @@
 @import "base/typo";
+@forward "../base/utilidades";
 
 .main{
-    margin: 15rem 10rem 0rem 10rem;   
+    @include marginMain(15rem, 10rem, 0rem, 10rem);
 }
 
 .titular{
@@ -34,9 +35,7 @@
     margin-left: 15rem; 
     margin-right: 15rem;
     .peluche{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        @include flex-aliCent-direColum;
         border: solid 10px black;
         padding-bottom: 3rem;
         background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
@@ -103,10 +102,7 @@
             margin-top: 0rem;     
         }
         div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @include flex-center-center-column;
         }
         .btn-lg{
             padding: 0.5rem 1rem;
@@ -131,7 +127,7 @@
 
 }/*informacion*/
 .marginInfo{
-    margin: 0rem 10rem 0rem 10rem;
+    @include marginMain(0rem, 10rem, 0rem, 10rem);
     .colorB{
         color: #a80909;
         .respuesta{
@@ -182,8 +178,7 @@
         height: 100%;
         width: 70%;
         .cajaComentario{
-            display: flex;
-            justify-content: center;
+            @include flex-jusCent-aliCent;
         }
         .btn-primary {
             color: #fff;
@@ -227,10 +222,8 @@
 /*cuenta*/
 
 .gridCuenta{
-    display: grid;
+    @include grid-jusCenter-aliCenter;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
     .registerMenu, .logMenu {
         .ajustarCuenta{
             display: flex;
