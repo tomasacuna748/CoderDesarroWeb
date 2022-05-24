@@ -1,7 +1,7 @@
 {
-  "name": "entrega-continua",
+  "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "entrega final del curso desarrollo web de Coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
