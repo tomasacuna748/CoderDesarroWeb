@@ -39,17 +39,20 @@
         border: solid 10px black;
         padding-bottom: 3rem;
         background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 75%);
+        transition: 1.5s;
         &:hover{
             transform: scale(1.3,1.3);
-            transition: 1.5s;
+               
         }
+        
+
         img {
             width: 60%;
         }
         span{
             margin: 0 0 2rem 0;
             font-size: 3.5rem;
-            font-weight: 600;  
+            font-weight: map-get($weights,semi-bold);  
         }
     }
 }
@@ -96,7 +99,7 @@
         p{
             font-size: 2.5rem;
             color: rgb(21, 90, 30);
-            font-weight: 600;
+            font-weight: map-get($weights,semi-bold);
             text-align: center;
             margin-bottom: 2rem; 
             margin-top: 0rem;     
@@ -111,15 +114,15 @@
             border-radius: 0.3rem;
         }
         .rotaR{
+            transition: 0.3s;
             &:hover{
                 transform: rotate(25deg);
-                transition: 0.3s;
             }  
         }
         .rotaCR{
+            transition: 0.3s;
             &:hover{
                 transform: rotate(-25deg);
-                transition: 0.3s;
             }  
         }
     }
@@ -156,12 +159,14 @@
     }
     
     .pregunta{
-        font-weight: 600;
+        font-weight: map-get($weights,extra-bold);
     }
     .respuesta{
         font-family: "Roboto Slab", serif;
         font-size: 2.5rem;
-        color: #9526C5;   
+        color: #9526C5;
+        font-weight: map-get($weights,medium); 
+
     }
 }
 /*contacto*/
@@ -170,7 +175,7 @@
     justify-content: center;  
     .contactoMenu{
         font-family: 'Lato', sans-serif;
-        font-weight: 300;  
+        font-weight: map-get($weights,light);
         padding: 6rem;
         margin: 2rem 2rem 0rem 2rem;
         color: #FFFFFF;
@@ -179,6 +184,7 @@
         width: 70%;
         .cajaComentario{
             @include flex-jusCent-aliCent;
+            margin-top: 5rem;
         }
         .btn-primary {
             color: #fff;
@@ -191,6 +197,7 @@
     .colorBack{
         background: #324355;
         padding: 5rem;
+        border-radius: 2rem;
     }
     
     .ajustarContacto{
@@ -200,6 +207,7 @@
     }
     
 }
+/*locales*/
 .gridLocales{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -212,7 +220,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2.5rem;
         color: #122992;
-        font-weight: 600;
+        font-weight: map-get($weights,semi-bold);
         h4{
             font-family: "Roboto Slab", serif;
             font-size: 3.5rem;   
@@ -220,7 +228,6 @@
     }
 }
 /*cuenta*/
-
 .gridCuenta{
     @include grid-jusCenter-aliCenter;
     grid-template-columns: 1fr 1fr;
@@ -232,11 +239,16 @@
             .colorBack{
                 background: #324355;
                 padding: 5rem;
+                border-radius: 2rem;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                }
             } 
         }
     
         font-family: 'Lato', sans-serif;
-        font-weight: 300;
+        font-weight: map-get($weights,light);
         width: 70%;
         padding: 3rem;
         margin: 2rem 5rem 3rem 5rem;
@@ -246,6 +258,7 @@
     }
     
 }
+
 
 
 

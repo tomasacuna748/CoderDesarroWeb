@@ -6,9 +6,9 @@
         .topFooter{
             @include flex-center-center-column;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: 800;
+            font-weight: map-get($weights,extra-bold);
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #000000;
             .redes a{
                 color: #0000ff;
@@ -25,23 +25,3 @@
 
 }
 
-.gridCuenta{
-    @include grid-jusCenter-aliCenter;
-    grid-template-columns: 1fr 1fr;
-    .logMenu{
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        width: 70%;
-        padding: 3rem;
-        margin: 2rem 5rem 3rem 5rem;
-        color: #FFFFFF;
-        font-size: 2rem;
-        display: block;
-        .ajustarCuenta{
-            display: flex;
-            display: inline-block;  
-            justify-content: space-around;  
-        }  
-    }
-    
-}

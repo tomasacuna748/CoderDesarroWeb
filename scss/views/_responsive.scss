@@ -10,7 +10,7 @@
         background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         a{ 
             font-size: 2.5rem;
-            font-weight: 1000;
+            font-weight: map-get($weights,full);
             margin: 2rem 1rem 2rem 1rem;
             padding: 0rem 0.5rem 1rem 1rem;   
             text-decoration: none;
@@ -57,6 +57,9 @@
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: 1fr 1fr;
+           
+            
+            
         }
         .gridLocales{
             margin: 0%;
@@ -68,7 +71,7 @@
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-size: 2rem;
                 color: #122992;
-                font-weight: 600;
+                font-weight: map-get($weights,semi-bold);
             }
             .mapa{
                 transform: scale(0.8,0.8);
@@ -93,7 +96,7 @@
         background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         .navbar a{ 
             font-size: 2.5rem;
-            font-weight: 1000;
+            font-weight: map-get($weights,full);
             margin: 2rem 1rem 2rem 1rem;
             padding: 0rem 0.5rem 1rem 1rem;
             
@@ -147,7 +150,7 @@
         }
         .gridCuenta{
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 70%;
             grid-template-rows: 1fr 1fr;
             .ajustarCuenta{
                 display: flex;
@@ -191,7 +194,7 @@
         background-image: linear-gradient($colorGradiantHeader1,$colorGradiantHeader2 50%);
         .navbar a{ 
             font-size: 3.0rem;
-            font-weight: 900;
+            font-weight: map-get($weights,extra-bold);
             margin: 1rem 1rem 2rem 1rem;
             padding: 0rem 0.5rem 1rem 1rem;   
             text-decoration: none;
@@ -202,7 +205,7 @@
         }
     }
     .main{
-        @include marginMain(15rem,8rem,0rem,8rem);
+        @include marginMain(10rem,8rem,0rem,8rem);
         .titular{
             font-family: "KGTakeOnTheWorld"; 
             font-size: 4rem;
@@ -224,7 +227,7 @@
         .logMenu {
     
             font-family: 'Lato', sans-serif;
-            font-weight: 300;
+            font-weight: map-get($weights,light);
             width: 70%;
             padding: 3rem;
             margin: 2rem 3rem 3rem 3rem;
@@ -241,6 +244,29 @@
         @include grid-jusCenter-aliCenter;
         grid-template-rows: repeat(2, 1fr);
         margin-top: 5rem;
+    }
+    .text-focus-in1 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    .text-focus-in2 {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.7s both;
+    }
+    .tracking-in-expand-fwd1 {
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }.tracking-in-expand-fwd2 {
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+    }
+    .scale-in-center1 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    }
+    .scale-in-center2 {
+        -webkit-animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
+                animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both;
     }
 }
 @media only screen and (min-width:1551px){

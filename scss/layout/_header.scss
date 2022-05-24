@@ -14,7 +14,7 @@ header {
     }
     .navbar a{ 
         font-size: 4rem;
-        font-weight: 1000;
+        font-weight: map-get($weights,full);
         margin: 1rem 3rem 2rem 2rem;
         padding: 0rem 0.5rem 1rem 1rem;
         text-decoration: none;

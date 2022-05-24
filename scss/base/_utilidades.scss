@@ -25,3 +25,13 @@
 @mixin marginMain($mtop, $mright, $mbot, $mleft){
     margin: $mtop $mright $mbot $mleft;
 }
+
+$weights: (
+     light: 300,
+     regular: 400,
+     medium: 500,
+     semi-bold: 600,
+     bold: 700,
+     extra-bold: 800,
+     full: 1000
+);
