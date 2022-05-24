@@ -233,7 +233,7 @@ header {
   .gridCuenta .registerMenu, .gridCuenta .logMenu {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    width: 70%;
+    width: 100%;
     padding: 3rem;
     margin: 2rem 5rem 3rem 5rem;
     color: #FFFFFF;
@@ -250,6 +250,10 @@ header {
         .gridCuenta .registerMenu .ajustarCuenta .colorBack div, .gridCuenta .logMenu .ajustarCuenta .colorBack div {
           display: flex;
           justify-content: space-between; }
+  .gridCuenta .boxCentro {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 @forward '../base/utilidades';
 .gridFooter {
@@ -328,20 +332,27 @@ header {
     .main .gridCuenta {
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 1fr 1fr; }
+      grid-template-rows: 1fr 1fr;
+      justify-items: center; }
     .main .gridLocales {
       margin: 0%;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr;
-      margin-left: 0rem; }
+      margin-left: 0rem;
+      grid-gap: 4rem; }
       .main .gridLocales .locales {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2rem;
         color: #122992;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-left: 3rem; }
       .main .gridLocales .mapa {
-        transform: scale(0.8, 0.8); }
+        display: flex;
+        justify-content: center;
+        transform: scale(1, 1); }
+      .main .gridLocales .marginleft {
+        margin-left: 0rem; }
   .gridFooter {
     display: grid;
     justify-content: center;
@@ -402,8 +413,9 @@ header {
           transition: 0s; }
     .main .gridCuenta {
       display: grid;
-      grid-template-columns: 70%;
-      grid-template-rows: 1fr 1fr; }
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center; }
       .main .gridCuenta .ajustarCuenta {
         display: flex;
         display: inline-block;

@@ -246,15 +246,19 @@
                 }
             } 
         }
-    
+            
         font-family: 'Lato', sans-serif;
         font-weight: map-get($weights,light);
-        width: 70%;
+        width: 100%;
         padding: 3rem;
         margin: 2rem 5rem 3rem 5rem;
         color: #FFFFFF;
         font-size: 2rem;
         display: block;    
+    }
+    .boxCentro{
+        @include flex-jusCent-aliCent;
+
     }
     
 }
